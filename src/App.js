@@ -72,7 +72,7 @@ const EXCHANGE_RATES = gql`
 export default function App() {
   const { loading, error, data } = useQuery(EXCHANGE_RATES);
 
-  if (loading) return <Loader />;
+  if (loading) return <Loader/>;
   if (error) return <p>Error :(</p>;
   return (
     <div className="App">
