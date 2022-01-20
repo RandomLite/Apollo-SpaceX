@@ -1,0 +1,92 @@
+.index-missions-main-style {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.864), rgba(0, 0, 0, 0.193)),
+    url("../../assets/images/spacex.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 6rem 0;
+  .base {
+    .title {
+      color: #d6d6d6;
+      text-align: center;
+      position: relative;
+      span {
+        content: "";
+        position: absolute;
+        width: 9.3rem;
+        border-bottom: solid 1px #d6d6d623;
+        bottom: 0;
+      }
+    }
+    .all-missions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      opacity: 0.9;
+      .top {
+        width: 30rem;
+        height: 30rem;
+        margin: 2%;
+        position: relative;
+        border-radius: 1rem;
+        transition: all 0.4s ease;
+        &:hover {
+          box-shadow: 2px 5px 5px #292929;
+          transition: all 0.4s ease;
+        }
+        .top-item {
+          .mission-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 1rem;
+          }
+
+          .details {
+            position: absolute;
+            bottom: 0;
+            background: #2d2d2d60;
+            width: 100%;
+            height: 25%;
+            border-radius: 1rem;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            overflow: hidden;
+
+            h3 {
+              font-size: 20px;
+              color: #fff;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 17px;
+              color: #fff;
+            }
+          }
+          &:hover {
+            .details {
+              height: 40%;
+            }
+          }
+        }
+        #link {
+          position: absolute;
+          bottom: 4%;
+          right: 6%;
+          background: rgba(255, 255, 255, 0.871);
+          color: #2d2d2d;
+          padding: 0.2rem 0.5rem;
+          border-radius: 1rem;
+          transition: all 0.3s ease;
+          &:hover {
+            background: #2d2d2d95;
+            color: #e9e9e9;
+          }
+        }
+      }
+    }
+  }
+}
